@@ -45,3 +45,6 @@ The **Decentralized Skill Verification Oracle** is a blockchain-based protocol d
 git clone https://github.com/yourusername/skill-verification-oracle.git
 cd skill-verification-oracle
 npm install
+![image](https://github.com/user-attachments/assets/0d53ce52-deda-4285-9832-c15afb102864)
+0x01Dea416D07Da13999f3AD0C1EB5014487DEccdc
+
