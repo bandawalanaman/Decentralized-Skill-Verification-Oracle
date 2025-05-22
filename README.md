@@ -38,13 +38,13 @@ The **Decentralized Skill Verification Oracle** is a blockchain-based protocol d
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 - Ethereum development environment like [Hardhat](https://hardhat.org/) or [Truffle](https://trufflesuite.com/)
 - [Metamask](https://metamask.io/) or similar wallet
-
+![image](https://github.com/user-attachments/assets/0d53ce52-deda-4285-9832-c15afb102864)
+0x01Dea416D07Da13999f3AD0C1EB5014487DEccdc
 ### Installation
 
 ```bash
 git clone https://github.com/yourusername/skill-verification-oracle.git
 cd skill-verification-oracle
 npm install
-![image](https://github.com/user-attachments/assets/0d53ce52-deda-4285-9832-c15afb102864)
-0x01Dea416D07Da13999f3AD0C1EB5014487DEccdc
+
 
