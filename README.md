@@ -69,7 +69,7 @@ skill-verification-oracle/
 ├── .env.example                        # Environment Variables (Template)
 ├── package.json                        # Project Metadata
 └── README.md                           # This File
-```
+
 
 ---
 
@@ -99,13 +99,13 @@ main()
 
 🧾 **Deployed Contract Address:**
 
-```solidity
+solidity
 0x01Dea416D07Da13999f3AD0C1EB5014487DEccdc
-```
+
 
 📸 **Screenshot:**
 
-![Deployed Contract Screenshot](https://user-images.githubusercontent.com/your-id/screenshot.png)
+![Deployed Contract Screenshot](![image](https://github.com/user-attachments/assets/0d53ce52-deda-4285-9832-c15afb102864))
 
 > Contract successfully deployed and visible on MetaMask / Etherscan.
 
