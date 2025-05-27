@@ -1,115 +1,196 @@
-# 🚀 Decentralized Skill Verification Oracle
+# 🧠 Decentralized Skill Verification Oracle
 
-![Ethereum](https://img.shields.io/badge/Ethereum-Mainnet-blueviolet?style=for-the-badge&logo=ethereum)
-![Solidity](https://img.shields.io/badge/Solidity-Smart_Contract-black?style=for-the-badge&logo=solidity)
-![Hardhat](https://img.shields.io/badge/Built_With-Hardhat-yellow?style=for-the-badge&logo=hardhat)
-![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-![Status](https://img.shields.io/badge/Project-Active-brightgreen?style=for-the-badge)
+![Solidity](https://img.shields.io/badge/Solidity-^0.8.0-363636?style=for-the-badge&logo=solidity)
+![JavaScript](https://img.shields.io/badge/JavaScript-Deploy_Script-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Ethereum](https://img.shields.io/badge/Deployed_On-Ethereum-blueviolet?style=for-the-badge&logo=ethereum)
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-<p align="center">
-  <img src="https://img.icons8.com/clouds/500/000000/oracle.png" alt="Oracle Icon" width="200"/>
-</p>
+> 🔐 **Verify skills securely on-chain. No third-party approvals. Just truth.**
 
 ---
 
-## 🔍 Overview
+## 📜 Project Overview
 
-The **Decentralized Skill Verification Oracle** is a blockchain-powered protocol that ensures **secure, trustless, and transparent** verification of skills and qualifications. It eliminates centralized certification systems and empowers individuals to validate their credentials via a decentralized network of oracles.
+**Decentralized Skill Verification Oracle** is a blockchain-based protocol designed to **verify user skills trustlessly and immutably** via decentralized oracles. It removes centralized authority bias and empowers users with full control over their skill data.
 
-> 🌟 Revolutionize how the world **proves skills** – with the **power of blockchain**!
+### ✨ Features
 
----
-
-## ✨ Key Features
-
-- ✅ **Decentralized Verification** – Skills verified by multiple independent oracles.
-- 🔐 **User Privacy First** – Users control what data to share and with whom.
-- 🔗 **Immutable Blockchain Records** – Skills are recorded forever on-chain.
-- 🏆 **Oracle Incentives** – Honest oracles are rewarded for proper verification.
-- ⚙️ **Easy dApp Integration** – Designed to plug into any Web3 application.
+- 🔗 **On-Chain Skill Certification**
+- 👨‍⚖️ **Oracle-Based Validation**
+- 🔒 **User-Controlled Privacy**
+- 🏆 **Incentivized Honest Verification**
+- ⚙️ **Easy Integration with any dApp**
 
 ---
 
-## 🧠 How It Works
+## 🔧 How It Works
 
-1. **User Claim Submission**  
-   Users submit skill claims along with supporting documents or evidence.
-
-2. **Oracle Assignment**  
-   Several oracles are automatically assigned to each claim.
-
-3. **Verification by Voting**  
-   Oracles assess the evidence and submit votes (approve/reject).
-
-4. **Consensus Agreement**  
-   If a verification threshold is met, the claim is approved.
-
-5. **On-Chain Storage**  
-   Verified data is recorded immutably on the Ethereum blockchain.
-
-6. **Skill Sharing**  
-   Users can share verified skills securely with employers or platforms.
+mermaid
+graph TD
+A[User Submits Skill Claim] --> B[Oracles Assigned]
+B --> C[Oracles Vote Independently]
+C --> D{Consensus Reached?}
+D -- Yes --> E[Skill Recorded On-Chain]
+D -- No --> F[Claim Rejected]
+```
 
 ---
 
-## 🎯 Use Cases
+## 🧠 Use Cases
 
-- 🧑‍🎓 **Education Certificates** – Replace paper with verified blockchain proofs.
-- 🧑‍💻 **Freelance Credentials** – Showcasing verified skills on gig platforms.
-- 🏢 **Hiring & HR** – Employers instantly verify applicants' qualifications.
-- 🌐 **Decentralized Identity** – Skills become a part of your blockchain resume.
+- 🎓 Blockchain-Based Diplomas
+- 🧑‍💻 Freelancer Skill Verification
+- 🏢 Trustless Hiring Systems
+- 🪪 Web3 Digital Identity
 
 ---
 
 ## ⚙️ Tech Stack
 
-| Layer         | Technology                  |
-|---------------|-----------------------------|
-| Blockchain    | Ethereum                    |
-| Language      | Solidity                    |
-| Dev Framework | Hardhat                     |
-| Scripting     | JavaScript (deploy.js)      |
-| Wallet        | MetaMask                    |
-| Environment   | dotenv (.env.example)       |
+| Layer         | Technology          |
+|---------------|---------------------|
+| 🛠️ Blockchain    | Ethereum            |
+| 💬 Language      | Solidity, JavaScript |
+| 🧪 Framework     | Hardhat             |
+| 🔐 Wallet        | MetaMask            |
+| 📁 Storage       | IPFS (optional)     |
 
 ---
 
-## 🧑‍💻 Installation
-
-### 📦 Prerequisites
-
-- Node.js
-- Hardhat
-- MetaMask
-- Git
-
-### 🛠️ Setup Steps
+## 📁 Project Structure
 
 bash
-git clone https://github.com/yourusername/skill-verification-oracle.git
-cd skill-verification-oracle
-npm install
+skill-verification-oracle/
+├── contracts/
+│   └── SkillVerificationOracle.sol     # Solidity Smart Contract
+├── scripts/
+│   └── deploy.js                       # JavaScript Deployment Script
+├── .env.example                        # Environment Variables (Template)
+├── package.json                        # Project Metadata
+└── README.md                           # This File
+```
 
-### Prerequisites
+---
 
-- [Node.js](https://nodejs.org/) (for running scripts)
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
-- Ethereum development environment like [Hardhat](https://hardhat.org/) or [Truffle](https://trufflesuite.com/)
-- [Metamask](https://metamask.io/) or similar wallet
-  
+## 🚀 JavaScript Deployment Script (deploy.js)
+
+javascript
+const hre = require("hardhat");
+
+async function main() {
+  const SkillOracle = await hre.ethers.getContractFactory("SkillVerificationOracle");
+  const oracle = await SkillOracle.deploy();
+  await oracle.deployed();
+  console.log("✅ Contract deployed to:", oracle.address);
+}
+
+main()
+  .then(() => process.exit(0))
+  .catch((error) => {
+    console.error("❌ Deployment failed:", error);
+    process.exit(1);
+  });
+```
+
+---
 
 ## ✅ Live Contract Deployment
 
-🧾 **Contract Address:**  
-solidity
-0x01Dea416D07Da13999f3AD0C1EB5014487DEccdc
-![image](https://github.com/user-attachments/assets/0d53ce52-deda-4285-9832-c15afb102864)
-0x01Dea416D07Da13999f3AD0C1EB5014487DEccdc
+🧾 **Deployed Contract Address:**
 
-### Installation
+```solidity
+0x01Dea416D07Da13999f3AD0C1EB5014487DEccdc
+```
+
+📸 **Screenshot:**
+
+![Deployed Contract Screenshot](https://user-images.githubusercontent.com/your-id/screenshot.png)
+
+> Contract successfully deployed and visible on MetaMask / Etherscan.
+
+---
+
+## 🛠️ Setup Steps
+
 bash
 git clone https://github.com/yourusername/skill-verification-oracle.git
 cd skill-verification-oracle
 npm install
 
 
+---
+
+### 📦 Prerequisites
+
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- [Hardhat](https://hardhat.org/) or [Truffle](https://trufflesuite.com/)
+- [MetaMask](https://metamask.io/) or similar Web3 wallet
+
+---
+
+## 📤 Deployment Guide
+
+### Step 1: Configure Environment
+
+Create a `.env` file and add your private key:
+
+```
+PRIVATE_KEY=your_metamask_private_key_here
+```
+
+> ⚠️ **Never share or commit your actual private key.**
+
+---
+
+### Step 2: Deploy the Contract
+
+bash
+npx hardhat run scripts/deploy.js --network <your_network>
+Replace `<your_network>` with `localhost`, `sepolia`, or `goerli`.
+
+---
+
+## 🚧 Future Roadmap
+
+- 🌍 Multi-chain Support (Polygon, BNB Chain)
+- 🏷️ NFT-Based Skill Badges
+- 🧾 IPFS Resume Hosting
+- 📲 Frontend dApp with QR Skill Sharing
+
+---
+
+## 🤝 Contributing
+
+bash
+# Fork & clone repo
+git clone https://github.com/yourusername/skill-verification-oracle.git
+
+# Create your feature branch
+git checkout -b feature/amazing-feature
+
+# Commit changes
+git commit -m "✨ Add amazing feature"
+
+# Push & open a PR
+git push origin feature/amazing-feature
+```
+
+---
+
+## 📄 License
+
+Licensed under the [MIT License](LICENSE).
+
+---
+
+## 🌐 Connect With Me
+
+[![GitHub](https://img.shields.io/badge/GitHub-View_Profile-black?style=for-the-badge&logo=github)](https://github.com/bandawalanaman)
+[![LinkedIn](https://in.linkedin.com/in/naman-bandawala-5b7993286?trk=people-guest_people_search-card)]
+
+
+---
+
+> 💡 “Blockchain doesn’t just decentralize systems — it decentralizes **trust**.”
