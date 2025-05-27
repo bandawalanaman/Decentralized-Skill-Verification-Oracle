@@ -163,10 +163,7 @@ struct SkillVerification {
 0x01Dea416D07Da13999f3AD0C1EB5014487DEccdc
 **Deployment Details:**
 - **Transaction Hash:** `0x39d5322e591f8e842...`
-- **Block Number:** 4900023
-- **Gas Used:** 0.11039064 tCORE2
 - **Deployment Status:** ✅ Successfully Deployed
-- **Contract Balance:** 0 tCORE2
 
 ---
 
@@ -494,14 +491,9 @@ We welcome contributions from developers, designers, and domain experts! Here's 
 
 ---
 
-## 💬 Community
+## 💬 Contact
+-linkedin :https://in.linkedin.com/in/naman-bandawala-5b7993286?trk=people-guest_people_search-card  
 
-Join our growing community of developers and professionals!
-
-- 💬 **Discord**: [Join our server](https://discord.gg/your-invite)
-- 🐦 **Twitter**: [@SkillVerificationOracle](https://twitter.com/your-handle)  
-- 📧 **Email**: hello@skillverification.oracle
-- 📚 **Blog**: [Medium Publication](https://medium.com/@your-publication)
 
 ---
 
