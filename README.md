@@ -2,11 +2,12 @@
 
 <div align="center">
 
-[![Blockchain](https://www.blockchain.com/)](https://www.blockchain.com/)
+[![Blockchain](https://img.shields.io/badge/Blockchain-Enabled-blue)](https://www.blockchain.com/)
 [![Solidity](https://img.shields.io/badge/Solidity-0.8.19-363636)](https://docs.soliditylang.org/en/v0.8.19/)
 [![Hardhat](https://img.shields.io/badge/Built%20with-Hardhat-yellow)](https://hardhat.org/)
 [![License](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
 [![Network](https://img.shields.io/badge/Network-Core%20Testnet%202-orange)](https://coredao.org/)
+
 
 **A revolutionary blockchain-based platform for trustless professional skill verification**
 
