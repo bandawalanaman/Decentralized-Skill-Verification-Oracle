@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Blockchain](https://img.shields.io/badge/Blockchain-Ethereum-blue)
+![Blockchain](https://www.blockchain.com/)
 ![Solidity](https://img.shields.io/badge/Solidity-0.8.19-363636)
 ![Hardhat](https://img.shields.io/badge/Built%20with-Hardhat-yellow)
 ![License](https://img.shields.io/badge/License-MIT-green)
